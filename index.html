@@ -7,19 +7,24 @@
   <title>Bad Habits</title>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic|Lato' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-  <script src= "myJs.js"></script>
-  <script src= "newJs.js"></script>
+  <script src= "myJS.js"></script>
+  <script src= "newJS.js"></script>
   <link rel="shortcut icon" href="favicon.ico" >
 <link rel="stylesheet" type="text/css" href="style.css">
   </script>
-  
+
   <style>
+	IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+  
 	#bolded{
 	font-weight: bold;
 	}
@@ -212,8 +217,7 @@ $(document).ready(function(){
     <div class="col-sm-8 text-left">
 	<h1>.</h1>
        <h2>Welcome to Bad Habits</h2>  <br>
-     <p>Do you have a bad habit? <br>Currently, your answer might be no. However, we want you to evaluate your daily engagement in certain activities (ex. eating cookies, drinking coffee, smoking cigarettes, etc.), now compare that number to your ideal engagement with these activities.
-     <br> </br>Now tell us, do you have a bad habit?
+     <p>Do you have a bad habit? <br>Currently, your answer might be no. However, we want you to evaluate your daily engagement in certain activities (ex. eating cookies, drinking coffee, smoking cigarettes, etc.), now compare that number to your ideal engagement with these activities. Now tell us, do you have a bad habit?
 	 <br></br>Our app targets thoughtful decision makers who are adamant about positively altering their lives. By maintaining daily visits to our web app, “Bad Habits” will keep track of your engagement goal (user’s set their goals in our intro survey) then will compare that number to your actual level of engagement; which will allow you to decide whether or not you have a bad habit.
 	 <br></br>Our app sends out helpful reminders, alternative’s to that bad habit, and keeps track of your progress. 
 	 <br></br>Are you ready to break your bad habit?
@@ -266,11 +270,13 @@ $(document).ready(function(){
 	  <h1>.</h1>
 		<h3>About Us</h3>
 		
-		<p>We are team H.O.M.E: Helping Others Master Excellence, this acronym aligns with our mission to provide the tools necessary to better daily lives. Our participation in the 2016 Girls Who Code Summer Immersion Program at Goldman Sachs, inspired the creation of this website as our final project. We hope our application “Bad Habits” will serve our .
+		<p>We are team H.O.M.E: Helping Others Master Excellence, this acronym aligns with our mission to provide the tools necessary to better daily lives. Our participation in the 2016 Girls Who Code Summer Immersion Program at Goldman Sachs, inspired the creation of this website as our final project. We hope our application “Bad Habits” will serve our purpose.
 
 		</p>
+		<img class = "displayed" src = "groupPic.jpg" alt = "Group Photo" width = "750px" align="middle">
 		<table style="width:50%">
 		<table cellspacing="100">
+		<br>
   <tr>
     <th>Akhila Chinepalli</th>
     <th>Gia Grier</th>
@@ -318,23 +324,24 @@ In order to successfully accomplish set goals; our users must adopt these two gu
 	  <div id = "more">
 	  <h1>.</h1>
 		<h3>Further Developments</h3>
-<p>We recognize that this program is not quite complex. Ideally we'll be able to expand this program to include many more features, such as being catered to more addictions/bad habits, having options for different languages, and having constant alerts to the users to remind them not to relapse. Our ultimate goal though is to link our program with the users' bank account and create a goals and rewards tab. This way, the user can set goals for themselves each week, and when the goals are accomplished, the user is treated to a reward. For every week the goal is reached, our program will set aside a set amount of money, determined by the user, into an account which the user can then access to treat themselves to the reward. If the goal is related to budgeting and at the end of the week the user is under budget, the remaining money in the budget will be placed in the rewards account. Also, we plan to make this web application and application for mobile devices.</p>
+<p>We recognize that this program is not quite complex. Ideally we'll be able to expand this program to include many more features, such as being catered to more addictions/bad habits, having options for different languages, and having constant alerts to the users to remind them not to relapse. Our ultimate goal though is to link our program with the users' bank account and create a goals tab. This way, the users can set goals for themselves each week, and when the goals are accomplished, the user is treated to a reward. For every week the goal is reached, our program will set aside a set amount of money, determined by the user, into an account which the user can then access to treat themselves to the reward. In order to make the website more secure, we plan to include password hashing as well as functions when signing up to ensure that all parts of the sign up page are filled out before sumbitting and that no username is used twice. Also, we plan to make this web application an application for mobile devices.</p>
 	  </div>
 	  <div id = "contact">
 	  <h1>.</h1>
 		<h3>Contact Us</h3>
 		<form action="action_page.php">
     <label for="name">Name</label>
-    <input type="text" id="name" name="name">
+    <input type="text" id="contactName" name="name">
 
     <label for="email">Email Address</label>
-    <input type="text" id="email" name="email">
+    <input type="text" id="contactEmail" name="email">
   
 	<label for="name">Message</label>
-	<textarea></textarea>
+	<input type="text" id="message" name="message"><br>
 	
-    <input type="submit" value="Submit" onclick>
+    <input type="submit" value="Submit">
   </form>
+  
   <h1>.</h1>
 	  </div>
     </div>
@@ -356,3 +363,14 @@ In order to successfully accomplish set goals; our users must adopt these two gu
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
